@@ -1,1 +1,365 @@
-Scott's Portfolio
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Scott McMains | GitHub portfolio page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300,400" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      
+      h1, h2, h3, h4, h5{
+        color:#4A4E69;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      p {
+        color: #4A4E69;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      section {
+        width:100%;
+        margin: 40px 0;
+        padding: 0 5%;
+      }
+
+      .section-heading {
+        text-transform: uppercase;
+        font-size: 1.6em;
+      }
+
+      hr {
+        max-width:300px;
+      }
+
+
+      .navbar.navbar-default {
+        background: none;
+        border: none; 
+        z-index: 1;
+      }
+
+
+      .navbar-default .navbar-text {
+        color:white;
+      }
+
+
+      .row-header {
+        padding: 10vh 10vw 0 10vw;
+        background-image: url('https://mydevportfolio.sfo2.cdn.digitaloceanspaces.com/dublin-sq.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        margin-bottom:100px;
+        display: flex;
+        align-items: center
+      }
+
+      .header-col {
+        position: relative;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.18);
+        bottom: -60px;
+        padding: 30px 0;
+        max-width:400px;
+        margin:auto;
+      }
+
+      .profile-pic {
+        border-radius:50%;
+        width:40%;
+        max-width: 200px;
+      }
+
+      .header-col h2 {
+        font-size: 1.3em;
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+
+      .email {
+        margin-top:20px;
+      }
+
+      .email .glyphicon {
+        margin-right:5px;
+      }
+
+
+      .project-img-col img {
+        max-width: 250px;
+        margin: auto;
+      }
+
+
+      .list-container {
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .techlogo {
+        width:140px;
+      }
+
+      .tech-item {
+        margin:10px;
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .tech-item-text {
+        margin-top:10px;
+      }
+
+      .tech-item i {
+        font-size:5em;
+      }
+
+      .tech-tool-item {
+        margin-left:15px;
+        display: inline-block;;
+      }
+
+      .row-footer {
+        padding: 0vh 10vw 10vw 10vw;
+        margin-top:100px;
+        background-image: url('https://mydevportfolio.sfo2.cdn.digitaloceanspaces.com/dublin-sq.jpg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .footer-col {
+        position: relative;
+        background: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.18);
+        top: -60px;
+        padding: 50px 0;
+        max-width:400px;
+        margin:auto;
+      }
+
+      .btn.outline {
+        background: none;
+        padding: 12px 22px;
+      }
+
+      .btn-primary.outline {
+        border: 2px solid #0099cc;
+        color: #0099cc;
+        border:0;
+      }
+
+      .linkedin-btn {
+        background-color: white;
+        width:140px;
+        box-shadow: 0px 2px 5px 1px lightgrey;
+        padding: 12px;
+        border-radius: 5px;
+      }
+
+      .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+        color: #33a6cc;
+        border-color: #33a6cc;
+      }
+      .btn-primary.outline:active, .btn-primary.outline.active {
+        border-color: #007299;
+        color: #007299;
+        box-shadow: none;
+      }
+
+    </style>
+  </head>
+  <body>
+
+  <div class="container-fluid">
+
+
+    <!-- Intro, name, tagline -->
+    <div class="row text-center row-header">
+      <div class="col-xs-12">
+        <div class="header-col">
+          <img src="https://avatars1.githubusercontent.com/u/41562831?v&#x3D;4" alt="profile pic" class="img-responsive profile-pic center-block">
+          <h1>Scott McMains</h1>
+          <h2>I am a Full Stack Web Developer aiming to use my technical skills and creative outlook to help build a better world. I enjoy designing practical, engaging, aesthetically appealing websites and applications. Please feel free to look through my work below!</h2>
+          <a href="mailto:scottmcmains@gmail.com" class="email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>scottmcmains@gmail.com</a>
+        </div>
+        
+      </div>
+    </div>
+
+
+
+    <!-- Projects -->
+    <section style="margin-top:0">
+
+      <div class="row">
+        <div class="col xs-12">
+          <h1 class="text-center section-heading">Work</h1>
+        </div>
+      </div>
+
+
+        <div class="row">
+
+          <div class="col-sm-8 col-sm-offset-2">
+            
+            <div class="col-lg-8">
+              <img src="http://www.theprepperjournal.com/wp-content/uploads/2013/03/NeighborhoodRECON.jpg" alt="" class="img-responsive center-block">
+            </div>
+
+            <div class="col-lg-4">
+              <h3>Neighbor Corps</h3>
+              <p>This app serves as a community task-sharing platform, enabling neighbors to be better stewards by flagging opportunities for improvement in their immediate vicinity, and responding with hands-on involvement making for cleaner, safer, and more enjoyable neighborhoods!</p>
+            </div>
+
+            <div class="col-xs-12 text-center">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-8 col-sm-offset-2">
+            
+            <div class="col-lg-8">
+              <img src="https://cdn-images-1.medium.com/max/2000/1*BY429y5oHDDf-eEGHBFShw.jpeg" alt="" class="img-responsive center-block">
+            </div>
+
+            <div class="col-lg-4">
+              <h3>Enviral</h3>
+              <p>CO2 Emissions Data by Country
+
+This web app allows users to select a country from either an interactive map, or a drop-down menu when in mobile mode.
+
+Based upon their selection, the page will output a table of metrics for that state from the years 1980-Present, showing both total CO2 emissions of that country, side by side with the country&#x27;s population from that year.
+
+The page will also generate a visual representation via D3 Bar Chart (or equivalent), to better illustrate the changing trends in populations and carbon emissions, and highlight any interesting trends.</p>
+            </div>
+
+            <div class="col-xs-12 text-center">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-8 col-sm-offset-2">
+            
+            <div class="col-lg-8">
+              <img src="https://cdn-images-1.medium.com/max/1600/1*Cbj_BcK5ePD4Mc4TK4sfvQ.jpeg" alt="" class="img-responsive center-block">
+            </div>
+
+            <div class="col-lg-4">
+              <h3>googleBooksSearch</h3>
+              <p>This application allows the user to search for books via the Google Books API. They can add books to their saved &quot;library&quot;, which are stored in a MongoDB collection, for future reference.</p>
+                <p><a href="https://github.com/thescottbob/googleBooksSearch">Launch</a></p>
+            </div>
+
+            <div class="col-xs-12 text-center">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-8 col-sm-offset-2">
+            
+            <div class="col-lg-8">
+              <img src="https://www.plowzandmowz.com/wp-content/uploads/2016/06/newspaper.jpg" alt="" class="img-responsive center-block">
+            </div>
+
+            <div class="col-lg-4">
+              <h3>scrapeNews</h3>
+              <p>scrapeNews is a website which allows the user to view news articles that have been scraped from Hacker News website and to leave comments on them. The user also has the ability to save or delete articles and/or their comments on them from a MongoDB database.</p>
+                <p><a href="https://github.com/thescottbob/scrapeNews">Launch</a></p>
+            </div>
+
+            <div class="col-xs-12 text-center">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-8 col-sm-offset-2">
+            
+            <div class="col-lg-8">
+              <img src="https://foodrevolution.org/wp-content/uploads/2018/04/blog-featured-diabetes-20180406-1330.jpg" alt="" class="img-responsive center-block">
+            </div>
+
+            <div class="col-lg-4">
+              <h3>FoodEaze</h3>
+              <p>Can’t quite decide whether cooking or eating out sounds more appealing for the evening? And even if that choice is simple, personal choices can make it complicated. Vegan, Nut-Free, Alcohol-Free, etc.
+
+
+FoodEaze provides the bridge for the gap of the two. Users can search for a food type or specific meal and find both highly rated recipes and restaurants, tailored to their personal preferences and choices!</p>
+                <p><a href="https://github.com/thescottbob/FoodEaze">Launch</a></p>
+            </div>
+
+            <div class="col-xs-12 text-center">
+            </div>
+
+          </div>
+
+        </div>
+
+
+    </section>
+
+
+  <hr>
+
+  <!-- Technical Experience -->
+
+
+  <hr>
+
+    <div class="row row-footer">
+      <div class="col footer-col text-center">
+        <h3>I'm available for work</h3>
+        <a href="mailto:scottmcmains@gmail.com" class="email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>scottmcmains@gmail.com</a>
+      </div>
+    </div>
+
+  </div> <!-- end container -->
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+
+  </body>
+</html>
